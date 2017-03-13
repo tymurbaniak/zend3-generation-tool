@@ -1,0 +1,78 @@
+
+<?php
+$this->headTitle('Dodaj tytu³!');
+
+			$form_>get('id')->setAttributes([
+			'class'=>'form-control',
+			]);
+			
+			$form_>get('first_name')->setAttributes([
+			'class'=>'form-control',
+			]);
+			
+			$form_>get('nip')->setAttributes([
+			'class'=>'form-control',
+			]);
+			
+			$form_>get('last_name')->setAttributes([
+			'class'=>'form-control',
+			]);
+			
+			$form_>get('licensure')->setAttributes([
+			'class'=>'form-control',
+			]);
+			
+			$form_>get('specialization')->setAttributes([
+			'class'=>'form-control',
+			]);
+			
+$doctorForm->get('submit')->setAttributes(['class'=>'btn btn-primary']);
+
+$doctorForm->prepare();
+?>
+<p></p>
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+	
+			<div class="form-group">
+				<?= $this->formLabel($doctorForm->get('id')); ?>
+				<?= $this->formElement($doctorForm->get('id')); ?>
+				<?= $this->formElementErrors($doctorForm->get('id')); ?>
+			</div>
+			
+			<div class="form-group">
+				<?= $this->formLabel($doctorForm->get('first_name')); ?>
+				<?= $this->formElement($doctorForm->get('first_name')); ?>
+				<?= $this->formElementErrors($doctorForm->get('first_name')); ?>
+			</div>
+			
+			<div class="form-group">
+				<?= $this->formLabel($doctorForm->get('nip')); ?>
+				<?= $this->formElement($doctorForm->get('nip')); ?>
+				<?= $this->formElementErrors($doctorForm->get('nip')); ?>
+			</div>
+			
+			<div class="form-group">
+				<?= $this->formLabel($doctorForm->get('last_name')); ?>
+				<?= $this->formElement($doctorForm->get('last_name')); ?>
+				<?= $this->formElementErrors($doctorForm->get('last_name')); ?>
+			</div>
+			
+			<div class="form-group">
+				<?= $this->formLabel($doctorForm->get('licensure')); ?>
+				<?= $this->formElement($doctorForm->get('licensure')); ?>
+				<?= $this->formElementErrors($doctorForm->get('licensure')); ?>
+			</div>
+			
+			<div class="form-group">
+				<?= $this->formLabel($doctorForm->get('specialization')); ?>
+				<?= $this->formElement($doctorForm->get('specialization')); ?>
+				<?= $this->formElementErrors($doctorForm->get('specialization')); ?>
+			</div>
+			
+	        <?= $this->formElement($doctorForm->get('submit')); ?>
+        
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   

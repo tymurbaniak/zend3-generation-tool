@@ -1,0 +1,18 @@
+Entity
+=>
+	Form
+	Controller
+	Manager
+	view
+
+
+
+
+/script
+
+/module/$name/src/Entity/$entityname
+/module/$name/src/Form/$entitynameForm
+/module/$name/src/Controller/$entityNameControlle
+/module/$name/src/Service/$entityNameManager
+
+module/$name/view/$_name/$entityname
